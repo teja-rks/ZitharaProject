@@ -21,7 +21,7 @@ const Calendar = () => {
         return;
       }
 
-      const response = await axios.get('https://emailcampaign-backend.onrender.com/api/campaigns', {
+      const response = await axios.get('https://zitharaproject.onrender.com/api/campaigns', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
