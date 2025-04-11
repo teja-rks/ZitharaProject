@@ -34,7 +34,7 @@ const EditCampaign = () => {
           return;
         }
 
-        const response = await axios.get(`http://localhost:5000/api/campaigns/${id}`, {
+        const response = await axios.get(`https://emailcampaign-backend.onrender.com/api/campaigns/${id}`, {
           headers: {
             'x-auth-token': token
           }
@@ -200,13 +200,13 @@ const EditCampaign = () => {
         });
         formDataToSend.append('image', formData.image);
 
-        await axios.put(`http://localhost:5000/api/campaigns/${id}`, formDataToSend, {
+        await axios.put(`https://emailcampaign-backend.onrender.com/api/campaigns/${id}`, formDataToSend, {
           headers: {
             'x-auth-token': token
           }
         });
       } else {
-        await axios.put(`http://localhost:5000/api/campaigns/${id}`, requestData, {
+        await axios.put(`https://emailcampaign-backend.onrender.com/api/campaigns/${id}`, requestData, {
           headers: {
             'x-auth-token': token,
             'Content-Type': 'application/json'
