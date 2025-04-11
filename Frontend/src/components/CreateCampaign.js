@@ -246,7 +246,7 @@ const CreateCampaign = () => {
         console.log(`${key}:`, value);
       }
   
-      const response = await axios.post('http://localhost:5000/api/campaigns', requestData, {
+      const response = await axios.post('https://emailcampaign-backend.onrender.com/api/campaigns', requestData, {
         headers: {
           'x-auth-token': token,
           'Content-Type': 'multipart/form-data'
