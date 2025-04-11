@@ -55,7 +55,7 @@ const Profile = () => {
         return;
       }
 
-      const response = await axios.get('https://emailcampaign-backend.onrender.com/api/auth/me', {
+      const response = await axios.get('https://zitharaproject.onrender.com/api/auth/me', {
         headers: { 
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -120,7 +120,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        'https://emailcampaign-backend.onrender.com/api/auth/update-profile',
+        'https://zitharaproject.onrender.com/api/auth/update-profile',
         formData,
         {
           headers: {
@@ -153,7 +153,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.put(
-        'https://emailcampaign-backend.onrender.com/api/auth/change-password',
+        'https://zitharaproject.onrender.com/api/auth/change-password',
         {
           currentPassword: formData.currentPassword,
           newPassword: formData.newPassword
@@ -209,7 +209,7 @@ const Profile = () => {
 
         try {
           const response = await axios.post(
-            'https://emailcampaign-backend.onrender.com/api/auth/twitter/connect',
+            'https://zitharaproject.onrender.com/api/auth/twitter/connect',
             {
               username,
               apiKey,
@@ -263,7 +263,7 @@ const Profile = () => {
         }
 
         const saveResponse = await axios.post(
-          'https://emailcampaign-backend.onrender.com/api/auth/instagram/save-username',
+          'https://zitharaproject.onrender.com/api/auth/instagram/save-username',
           { username: socialAccounts.instagram.username },
           {
             headers: {
@@ -274,7 +274,7 @@ const Profile = () => {
         );
 
         if (saveResponse.data.success) {
-          const oauthResponse = await axios.get('https://emailcampaign-backend.onrender.com/api/auth/instagram/connect', {
+          const oauthResponse = await axios.get('https://zitharaproject.onrender.com/api/auth/instagram/connect', {
             headers: {
               'Authorization': `Bearer ${token}`,
               'Content-Type': 'application/json'
@@ -293,7 +293,7 @@ const Profile = () => {
         }
 
         const saveResponse = await axios.post(
-          'https://emailcampaign-backend.onrender.com/api/auth/facebook/save-username',
+          'https://zitharaproject.onrender.com/api/auth/facebook/save-username',
           { username: socialAccounts.facebook.username },
           {
             headers: {
@@ -304,7 +304,7 @@ const Profile = () => {
         );
 
         if (saveResponse.data.success) {
-          const oauthResponse = await axios.get('https://emailcampaign-backend.onrender.com/api/auth/facebook/connect', {
+          const oauthResponse = await axios.get('https://zitharaproject.onrender.com/api/auth/facebook/connect', {
             headers: {
               'Authorization': `Bearer ${token}`,
               'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ const Profile = () => {
         return;
       }
 
-      await axios.post(`https://emailcampaign-backend.onrender.com/api/auth/${platform}/disconnect`, {}, {
+      await axios.post(`https://zitharaproject.onrender.com/api/auth/${platform}/disconnect`, {}, {
         headers: {
           'x-auth-token': token
         }
@@ -391,7 +391,7 @@ const Profile = () => {
         return;
       }
 
-      await axios.post(`https://emailcampaign-backend.onrender.com/api/auth/${platform}/disconnect`, {}, {
+      await axios.post(`https://zitharaproject.onrender.com/api/auth/${platform}/disconnect`, {}, {
         headers: {
           'x-auth-token': token
         }
@@ -424,7 +424,7 @@ const Profile = () => {
 
       // First save the username
       const saveResponse = await axios.post(
-        'https://emailcampaign-backend.onrender.com/api/auth/facebook/save-username',
+        'https://zitharaproject.onrender.com/api/auth/facebook/save-username',
         { username: socialAccounts.facebook.username },
         {
           headers: {
@@ -437,7 +437,7 @@ const Profile = () => {
       if (saveResponse.data.success) {
         // Then get the OAuth URL
         const oauthResponse = await axios.get(
-          'https://emailcampaign-backend.onrender.com/api/auth/facebook/connect',
+          'https://zitharaproject.onrender.com/api/auth/facebook/connect',
           {
             headers: {
               'Authorization': `Bearer ${localStorage.getItem('token')}`,
