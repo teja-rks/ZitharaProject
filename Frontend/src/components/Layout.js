@@ -27,7 +27,7 @@ const Layout = () => {
           }
         };
 
-        const res = await axios.get('http://localhost:5000/api/auth/me', config);
+        const res = await axios.get('https://emailcampaign-backend.onrender.com/api/auth/me', config);
         setUser(res.data);
       } catch (err) {
         console.error(err);
