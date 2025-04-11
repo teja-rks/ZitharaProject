@@ -24,11 +24,6 @@ A full-stack AI-powered application that helps retail businesses plan, create, s
 | React.js       | Node.js        | MongoDB Atlas   | Gemini API       | Vercel (Frontend), Render (Backend) |
 |  CSS   | Express.js     | Mongoose        | Gemini (3.5/4)  |                 |
 
----
-
-## 📸 Screenshots
-
-> *(Add screenshots here if available for dashboard, login, campaign creation, etc.)*
 
 ---
 
