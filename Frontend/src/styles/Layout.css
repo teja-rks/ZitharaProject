@@ -1,0 +1,151 @@
+/* .layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px; 
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.expanded {
+  margin-left: 0;
+}
+
+.top-bar {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: #f3f4f6;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  width: 300px;
+}
+
+
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notification-badge {
+  position: relative;
+  color: #666;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.notification-badge:hover {
+  background: #f3f4f6;
+}
+
+.date-display {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.page-content {
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .top-bar {
+    padding: 1rem;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+
+  .date-display {
+    display: none;
+  }
+
+  .page-content {
+    padding: 1rem;
+  }
+}  */
+
+/* Add these styles to your Layout.css file */
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.greeting-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.greeting-subtext {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* You might need to adjust these existing styles */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}

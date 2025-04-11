@@ -1,0 +1,472 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.profile-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.profile-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: #666;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: #f3f4f6;
+  color: #1a1a1a;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Forms */
+.profile-form,
+.password-form {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Social Media Section */
+.social-accounts-section {
+  margin-top: 1rem;
+}
+
+.social-accounts-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-accounts-section p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.social-accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-account-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.platform-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.platform-icon.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.platform-icon.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.platform-icon.twitter {
+  background:white;
+  /* color: white; */
+}
+
+.platform-details {
+  flex: 1;
+}
+
+.platform-details h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.connect-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.connect-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.connect-form button,
+.disconnect-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-form button {
+  background: #2563eb;
+  color: white;
+}
+
+.connect-form button:hover {
+  background: #1d4ed8;
+}
+
+.connect-form button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.disconnect-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background: #dc2626;
+}
+
+.connected-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.connected-badge {
+  font-size: 0.9rem;
+  color: #059669;
+  background: #d1fae5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Security Section */
+.security-section {
+  max-width: 600px;
+}
+
+.security-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.password-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.form-actions {
+  margin-top: 2rem;
+}
+
+.save-button {
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background: #1d4ed8;
+}
+
+.save-button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Alert Messages */
+.alert {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.alert.success {
+  background: #d1fae5;
+  color: #059669;
+  border: 1px solid #34d399;
+}
+
+.alert.error {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #ef4444;
+}
+
+/* Social Media Connections */
+.social-connections {
+  padding: 20px;
+}
+
+.social-connection-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.platform-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.platform-header h3 {
+  margin-left: 10px;
+  color: #333;
+}
+
+.platform-icon {
+  font-size: 24px;
+}
+
+.platform-icon.twitter {
+  color: #1DA1F2;
+}
+
+.connection-details {
+  padding: 10px 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1DA1F2;
+  box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.1);
+}
+
+.connect-btn {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.connect-btn:hover {
+  background-color: #1a91da;
+}
+
+.connect-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.connected-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.disconnect-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.disconnect-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-content {
+    padding: 1.5rem;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+  }
+
+  .social-accounts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-account-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .platform-icon {
+    margin: 0 0 1rem;
+  }
+
+  .connect-form {
+    flex-direction: column;
+  }
+
+  .connected-status {
+    flex-direction: column;
+  }
+
+  .social-connection-card {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .connection-status {
+    flex-direction: column;
+  }
+
+  .twitter-credentials {
+    max-width: 100%;
+  }
+}
+
+.logout-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.logout-button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+.logout-button i {
+  font-size: 1.1rem;
+} 
