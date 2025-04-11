@@ -32,7 +32,7 @@ const Register = () => {
     }
 
     try {
-      const res = await fetch('https://emailcampaign-backend.onrender.com/api/auth/register', {
+      const res = await fetch('https://zitharaproject.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
