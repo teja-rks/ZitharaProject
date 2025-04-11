@@ -22,7 +22,7 @@ const Campaigns = () => {
         return;
       }
   
-      const response = await axios.get('https://emailcampaign-backend.onrender.com/api/campaigns', {
+      const response = await axios.get('https://zitharaproject.onrender.com/api/campaigns', {
         headers: {
           'x-auth-token': token
         }
@@ -64,7 +64,7 @@ const Campaigns = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`https://emailcampaign-backend.onrender.com/api/campaigns/${id}`, {
+      await axios.delete(`https://zitharaproject.onrender.com/api/campaigns/${id}`, {
         headers: {
           'x-auth-token': token
         }
