@@ -21,8 +21,8 @@ A full-stack AI-powered application that helps retail businesses plan, create, s
 
 | Frontend       | Backend        | Database        | AI Integration  | Hosting         |
 |----------------|----------------|-----------------|------------------|------------------|
-| React.js       | Node.js        | MongoDB Atlas   | OpenAI API       | Vercel (Frontend), Render (Backend) |
-|  CSS   | Express.js     | Mongoose        | ChatGPT (3.5/4)  |                 |
+| React.js       | Node.js        | MongoDB Atlas   | Gemini API       | Vercel (Frontend), Render (Backend) |
+|  CSS   | Express.js     | Mongoose        | Gemini (3.5/4)  |                 |
 
 ---
 
