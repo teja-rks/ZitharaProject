@@ -109,14 +109,14 @@ const Dashboard = () => {
         };
 
         // Fetch user data
-        const userRes = await axios.get('http://localhost:5000/api/auth/me', config);
+        const userRes = await axios.get('https://emailcampaign-backend.onrender.com/api/auth/me', config);
         if (!userRes.data) {
           throw new Error('No user data received');
         }
         setUser(userRes.data);
 
         // Fetch campaigns
-        const campaignsRes = await axios.get('http://localhost:5000/api/campaigns', config);
+        const campaignsRes = await axios.get('https://emailcampaign-backend.onrender.com/api/campaigns', config);
         const campaigns = campaignsRes.data.data || [];
 
         // Get active campaigns
